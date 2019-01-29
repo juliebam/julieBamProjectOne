@@ -1,0 +1,355 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+html {
+    font-size: 62.5%;
+}
+/* Jenny said keeping it at 62.5% is ok as long as I remember to set the correct body font-size */
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    
+}
+/***********Common Styles************/
+
+h1, h2, h3 {
+    font-family: 'Pacifico', cursive;
+}
+h2 {
+    font-size: 4.2rem;
+    font-weight: normal;
+}
+
+h3 {
+    color: #f2a11c;
+    padding-top: 20px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 2.0rem;
+}
+
+button {
+    background: #1f2022;
+    color: #f2a11c;
+    padding: 10px 30px;
+    border: none;
+ }
+
+ button a {
+     text-decoration: none;
+     text-transform: uppercase;
+     color: #f2a11c;
+     font-weight: 700;
+ }
+
+ img {
+     max-width: 100%;
+     display: block;
+ }
+/***********Header Styles************/
+
+header {
+    background-image: url('assets/image-1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+    max-width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    padding-top: 24px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 33px;
+    font-size: 2.0rem;
+    color: white;
+    transition: color 0.2s linear;
+}
+
+nav ul li a:hover {
+    color: #f2a11c;
+}
+
+
+.headerPartOne {
+    text-align: center;
+}
+
+.headerPartOne h1 {
+    padding-top: 140px;
+    font-size: 13.0rem;
+    color: #f2a11c;
+}
+
+.social ul {
+    margin: 0;
+    list-style: none;
+}
+
+.social nav ul li {
+    display: inline-block;
+}
+
+.social a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 33px;
+    font-size: 2.0rem;
+    color: #f2a11c;
+    transition: color 0.2s linear;
+}
+
+.social a:hover {
+    color: white;
+}
+.social {
+    position: absolute;
+    top: 306px;
+    right: 20px;
+}
+
+.headerContainer {
+    position: relative;
+}
+
+.aboutText, .missionText {
+    padding: 100px;
+}
+
+.aboutImage {
+    background: url('assets/imageTwo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+    height: 580.9px;
+}
+
+ .aboutText, .aboutImage {
+    width: 50%;
+    float: left;
+ }
+
+ .missionImage {
+    background-image: url('assets/imageThree.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+    height: 600px;
+ }
+
+ .missionText, .missionImage {
+     width: 50%;
+     float: left;
+ }
+
+ 
+ .meetAlissa {
+     background: #f4f4f4;
+ }
+
+ .alissaImage {
+    background-image: url('assets/imageFour.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+    height: 328px;
+ }
+
+ .alissaText h2 {
+    margin: 0;
+ }
+
+ .alissaText {
+    width: calc(80% - 140px);
+    float: left;
+    padding: 100px 0;
+    padding-right: 100px;
+ }
+
+ .alissaText p {
+     margin-top: 0;
+ }
+ 
+ .alissaImage {
+    width: 20%;
+    float: left;
+    margin-top: 117px;
+    margin-left: 100px;
+    margin-right: 40px; 
+    margin-bottom: 117px;
+ }
+
+ .icons {
+    background: url('assets/imageFive.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    /* max-width: 100%; */
+ }
+ 
+ .icons p {
+     margin: 0;
+     color: #f2a11c;
+     font-size: 3.0rem;
+     font-weight: 600;
+}
+
+ .icon {
+     font-size: 4.0rem;
+     color: white;
+ }
+
+ .item {
+     text-align: center;
+     width: 30%;
+     float: left;
+     padding-top: 175px;
+ }
+
+ .iconDiv {
+     width: 750px;
+     margin: 0 auto;
+     text-align: center;
+ }
+
+ .theGram h2 {
+     text-align: center;
+     margin-top: 100px;
+ }
+
+ .galleryItem {
+     width: calc(33.33% - 40px);
+     float: left; 
+     margin: 0 20px;
+     padding-bottom: 100px;
+ }
+
+.contact {
+    background-color: #1f2022;
+}
+
+.contact p {
+    color: white;
+}
+
+.contact nav ul {
+    padding-top: 0;
+}
+
+.contact nav {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.contactInfo p {
+    width: 280px;
+}
+
+.contactInfo, .contactForm {
+    width: calc(50% - 100px);
+    float: left;
+    padding-bottom: 100px;
+}
+
+.contactInfo {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.contactForm p {
+    font-weight: 300;
+}
+
+input {
+    height: 50px;
+    margin-right: -5px;
+    width: 450px;
+}
+
+input::placeholder { 
+    font-size: 1.8rem;
+    margin-left: 20px;
+  }
+
+input.formInput {
+    padding-left: 20px;
+}
+
+.subscribe {
+    background: #f2a11c;
+    color: #1f2022;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #000;
+    color: grey;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    font-weight: bolder;
+}
+
+@media (max-width: 1320px) {
+    .aboutText, .aboutText{
+        float: none;
+        text-align: center;
+    }
+
+  }
+
+  @media (max-width: 940px) {
+    body {
+      background:red;
+    }
+  }
+  
+  @media (max-width: 940px) {
+    body {
+      background:red;
+    }
+  }
+
