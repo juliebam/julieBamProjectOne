@@ -174,14 +174,15 @@ nav ul li a:hover {
     background-size: cover;
 	background-position: center;
     height: 600px;
+    width: 50%;
+    float: left;
  }
 
- .missionText, .missionImage {
+ .missionText {
      width: 50%;
      float: left;
  }
 
- 
  .meetAlissa {
      background: #f4f4f4;
  }
@@ -224,7 +225,6 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     min-height: 60vh;
-    /* max-width: 100%; */
  }
  
  .icons p {
@@ -282,7 +282,7 @@ nav ul li a:hover {
 }
 
 .contactInfo p {
-    width: 280px;
+    width: 30%;
 }
 
 .contactInfo, .contactForm {
@@ -334,22 +334,115 @@ footer p {
 }
 
 @media (max-width: 1320px) {
-    .aboutText, .aboutText{
+    .aboutText{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+        float:left;
+        margin-top: 600px;
+    }
+
+    .aboutImage {
+        width: 100%;
+        background: url('assets/image-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 300px;
+        float:left;
+        margin-left: -100%;
+    }
+  
+    .missionText {
         float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .missionText {
         text-align: center;
     }
 
-  }
+    .missionImage {
+        float: none;
+        width: 100%;
+        background: url('assets/imageThree.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 
-  @media (max-width: 940px) {
-    body {
-      background:red;
+    .meetAlissa {
+        padding: 50px 20px;
+    }
+    .alissaImage {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .alissaText {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+    
+  @media (max-width: 970px) {
+    .social {
+        position: static;
     }
   }
   
   @media (max-width: 940px) {
-    body {
-      background:red;
+    .contactInfo, .contactForm {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
+    .contactForm {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .contactInfo p {
+        width: 100%;
+    }
+
+    .contact nav {
+        padding-top: 50px;
+    }
+
   }
 
+  @media (max-width: 870px) {
+    .alissaText {
+        padding: 50px 0;
+    }  
+    .meetAlissa {
+          padding: 0 20px;
+      }
+
+      .aboutImage {
+          height: 200px;
+      }
+
+      .aboutText {
+         margin-top: 200px;
+         padding: 160px;
+      }
+
+      .missionImage {
+          height: 300px;
+      }
+
+      .missionText {
+          padding: 50px 100px;
+      }
+
+      h2 {
+          margin-top: 0;
+      }
+    }
